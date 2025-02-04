@@ -5,6 +5,8 @@ import CandleChart from "./CandleChart"
 import TradingSignals from "./TradingSignals"
 import { SmartMoneyTrackingSection } from "./SmartMoneyTrackingSection"
 import { CTASection } from "./CTASection"
+import { UserShowcase } from "./UserShowcase"
+import { Testimonials } from "./Testimonials"
 
 export default function AnimatedHero() {
   return (
@@ -40,7 +42,7 @@ export default function AnimatedHero() {
                   <span className="absolute inset-0 w-full h-full rounded-full bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300 ease-in-out"></span>
                   <span className="relative flex items-center">
                     <span className="w-2 h-2 bg-black rounded-full mr-2 group-hover:animate-ping"></span>
-                    <span className="text-sm font-semibold">Start Tracking</span>
+                    <span className="text-sm font-semibold">Buy Access</span>
                   </span>
                 </Button>
                 <Button
@@ -75,8 +77,7 @@ export default function AnimatedHero() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group bg-gradient-to-br from-black to-gray-900 rounded-lg w-full md:w-64 flex justify-between items-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl cursor-pointer overflow-hidden relative
-                  py-3 px-4 md:py-6 md:px-6" // Adjusted padding for mobile
+                  className="group bg-gradient-to-br from-black to-gray-900 rounded-lg w-full md:w-64 flex justify-between items-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl cursor-pointer overflow-hidden relative py-3 px-4 md:py-6 md:px-6"
                 >
                   <h3 className="text-white text-base md:text-lg font-semibold z-10">{title}</h3>
                   <div
@@ -91,9 +92,11 @@ export default function AnimatedHero() {
           </main>
           <CandleChart />
         </div>
+        <UserShowcase />
         <div className="bg-gradient-to-b from-green-950/20 via-black/95 to-black">
           <SmartMoneyTrackingSection />
           <TradingSignals />
+          <Testimonials />
           <CTASection />
         </div>
       </div>
