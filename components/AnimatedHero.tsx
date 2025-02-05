@@ -94,9 +94,9 @@ export default function AnimatedHero() {
         </div>
         <UserShowcase />
         <div className="bg-gradient-to-b from-green-950/20 via-black/95 to-black">
+          <Testimonials />
           <SmartMoneyTrackingSection />
           <TradingSignals />
-          <Testimonials />
           <CTASection />
         </div>
       </div>
